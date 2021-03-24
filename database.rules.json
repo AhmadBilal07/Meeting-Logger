@@ -1,0 +1,15 @@
+{
+  "rules": {
+    ".read": true,  // 2021-4-23
+    ".write": "auth!=null", //"now < 1619132400000",  // 2021-4-23
+      "meetings":{
+        "$meetingID":{
+          "$userID":{
+            "attendees":{
+            ".write":true
+            }
+          }
+        }
+      }
+  }
+}
